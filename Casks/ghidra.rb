@@ -27,6 +27,7 @@ cask "ghidra" do
   end
 
   binary "#{caskroom_path}/#{version.csv.first}-#{version.csv.second}/ghidra_#{version.csv.first}_PUBLIC/ghidraRun"
+  binary "#{caskroom_path}/#{version.csv.first}-#{version.csv.second}/ghidra_#{version.csv.first}_PUBLIC/support/ghidraDebug"
 
   preflight do
     # Log4j misinterprets comma in staged_path as alternative delimiter
